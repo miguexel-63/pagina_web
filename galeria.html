@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería - Policía en EE.UU.</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
 </head>
 <body>
     <header>
-        <h1>Galería de Policía en EE.UU.</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="opinion.html">Opinión</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="contacto.html">Contactos</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo del sitio">
+            <h1 id="1">BEYOND</h1><h1 id="2">THE</h1><h1 id="3">SIRENS</h1>
+        </div>
+
+       
     </header>
-    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="opinion.html">Opinión</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
+        </ul>
+    </nav>
+
+
+
     <main>
         <section class="galeria">
             <h2>Uniformes de Policía</h2>
@@ -61,7 +70,18 @@
                 </figure>
             </div>
         </section>
-        
+        <section class="formulario">
+            <h2>Envía tus Imágenes</h2>
+            <form action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" method="POST" enctype="multipart/form-data">
+                <label for="imagen">Selecciona una imagen:</label>
+                <input type="file" name="imagen" id="imagen" required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea name="descripcion" id="descripcion" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
         
     </main>
 
