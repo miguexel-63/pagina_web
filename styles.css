@@ -83,3 +83,30 @@ section img {
 section img:hover {
     transform: scale(1.05); 
 }
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+    font-size: 18px;
+    text-align: left; 
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #154872de;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+tr:hover {
+    background-color: #ddd;
+    transition: background-color 0.3s ease-in-out;
+}
