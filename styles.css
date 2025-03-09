@@ -69,3 +69,17 @@ nav a:hover {
 .galeria img:hover {
     transform: scale(1.10); 
 }
+
+section img {
+    display: block; 
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin: 10px auto; 
+    transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.05); 
+}
