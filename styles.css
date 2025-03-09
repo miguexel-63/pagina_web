@@ -51,3 +51,21 @@ nav a:hover {
         text-align: center;
     }
 }
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 15px; 
+    padding: 20px;
+}
+
+.galeria img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.galeria img:hover {
+    transform: scale(1.10); 
+}
