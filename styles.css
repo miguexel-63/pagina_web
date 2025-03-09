@@ -179,3 +179,34 @@ label {
         font-size: 14px;
     }
 }
+
+a {
+    text-decoration: none; 
+    color: #154872de; 
+    font-weight: 600; 
+    transition: all 0.3s ease; 
+}
+
+a:focus {
+    outline: none; 
+}
+
+a:visited {
+    color: #570d0d; 
+}
+
+a:hover {
+    color: #0d3b57; 
+    text-decoration: underline;
+}
+
+nav a {
+    margin: 0 10px; 
+    border-radius: 4px;
+    color: #154872de; 
+}
+
+nav a:hover {
+    background-color: #154872de; 
+    color: white; 
+}
