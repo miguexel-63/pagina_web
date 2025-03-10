@@ -42,4 +42,7 @@ A continuación, se presentan las capturas de pantalla de la validación de cada
 
 ![image](https://github.com/user-attachments/assets/db3cc8fa-a6cf-42ec-bae9-e59a05243733)
 
+![alt text](image.png)
+
+
 Validación: Se ha usado para validar la pagina validator.w3.org.
