@@ -1,5 +1,8 @@
 * {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -7,18 +10,17 @@ header {
 }
 
 header div {
-    background-color: #154872de;
+    background-color: rgba(21, 72, 114, 0.87);
     display: flex;
     align-items: center;
-    padding: 20px 20px;
+    padding: 20px;
 }
 
 header img {
     width: 150px;
     height: 55px;
     border-radius: 15px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 header h1 {
@@ -28,6 +30,16 @@ header h1 {
 
 nav {
     background-color: rgb(110, 117, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
 }
 
 nav a {
@@ -35,19 +47,22 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
     font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: rgb(88, 88, 88);
+    background-color: rgba(21, 72, 114, 0.87);
+    color: white;
 }
-
 
 @media (max-width: 600px) {
     body {
         font-size: 14px;
     }
     nav ul {
-        display: block;
+        flex-direction: column;
         text-align: center;
     }
 }
@@ -55,41 +70,41 @@ nav a:hover {
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    gap: 15px; 
+    gap: 15px;
     padding: 20px;
 }
 
 .galeria img {
-    width: 100%; 
+    width: 100%;
     height: auto;
-    border-radius: 10px; 
-    transition: transform 0.3s ease-in-out; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .galeria img:hover {
-    transform: scale(1.10); 
+    transform: scale(1.1);
 }
 
 section img {
-    display: block; 
-    width: 100%; 
-    max-width: 400px; 
-    height: auto; 
-    border-radius: 10px; 
-    margin: 10px auto; 
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px auto;
     transition: transform 0.3s ease-in-out;
 }
 
 section img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 table {
-    width: 100%; 
-    border-collapse: collapse; 
-    margin: 20px 0; 
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
     font-size: 18px;
-    text-align: left; 
+    text-align: left;
 }
 
 th, td {
@@ -98,12 +113,12 @@ th, td {
 }
 
 th {
-    background-color: #154872de;
+    background-color: rgba(21, 72, 114, 0.87);
     color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2; 
+    background-color: #f2f2f2;
 }
 
 tr:hover {
@@ -112,101 +127,85 @@ tr:hover {
 }
 
 form {
-    max-width: 600px; 
+    max-width: 600px;
     margin: 30px auto;
-    padding: 20px; 
+    padding: 20px;
     background-color: #f9f9f9;
-    border-radius: 8px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: 2px solid #ccc; 
-    border-radius: 4px; 
+    border: 2px solid #ccc;
+    border-radius: 4px;
     font-size: 16px;
-    box-sizing: border-box; 
-    transition: border-color 0.3s ease; 
+    transition: border-color 0.3s ease;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
-    border-color: #154872de; 
+input:focus, textarea:focus {
+    border-color: rgba(21, 72, 114, 0.87);
     outline: none;
 }
 
 button {
-    padding: 12px 20px; 
-    background-color: #154872de;
-    color: white; 
-    border: none; 
-    border-radius: 4px; 
-    font-size: 16px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(21, 72, 114, 0.87);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0d3b57; 
+    background-color: #0d3b57;
 }
 
 label {
-    display: block; 
-    margin-bottom: 8px; 
-    font-size: 18px; 
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
 }
 
 .error {
-    color: red; 
-    font-size: 14px; 
-    margin-top: -10px; 
-    margin-bottom: 10px; 
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {
     form {
-        padding: 15px; 
-        width: 90%; 
+        padding: 15px;
+        width: 90%;
     }
 
-    input[type="text"], input[type="email"], input[type="password"], textarea {
-        font-size: 14px; 
+    input, textarea {
+        font-size: 14px;
     }
 
     button {
-        width: 100%; 
         font-size: 14px;
     }
 }
 
 a {
-    text-decoration: none; 
-    color: #154872de; 
-    font-weight: 600; 
-    transition: all 0.3s ease; 
-}
-
-a:focus {
-    outline: none; 
-}
-
-a:visited {
-    color: #570d0d; 
+    text-decoration: none;
+    color: rgba(21, 72, 114, 0.87);
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0d3b57; 
+    color: #0d3b57;
     text-decoration: underline;
 }
 
-nav a {
-    margin: 0 10px; 
-    border-radius: 4px;
-    color: #154872de; 
-}
-
-nav a:hover {
-    background-color: #154872de; 
-    color: white; 
+a:visited {
+    color: #570d0d;
 }
