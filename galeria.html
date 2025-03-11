@@ -3,31 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería - Policía en EE.UU.</title>
+    <title>Galería - Policía USA.</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
-
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo del sitio">
-            <h1 id="1">BEYOND</h1><h1 id="2">THE</h1><h1 id="3">SIRENS</h1>
-        </div>
-
-       
+        <img src="logo.png" alt="logo">
+        <h1>BEYOND THE SIRENS</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="opinion.html">Opinión</a></li>
-            <li><a href="noticias.html">Noticias</a></li>
-            <li><a href="contacto.html">Contactos</a></li>
-        </ul>
+        <a href="index.html">Inicio</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="opinion.html">Opinión</a>
+        <a href="galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
     </nav>
-
-
-
     <main>
         <section class="galeria">
             <h2>Uniformes de Policía</h2>
@@ -45,7 +36,6 @@
                     <figcaption>Patrulla de policía patrullando la ciudad.</figcaption>
                 </figure>
             </div>
-
             <h2>Vehículos de Policía</h2>
             <div class="imagenes">
                 <figure>
@@ -57,7 +47,6 @@
                     <figcaption>Vehículo policial estacionado frente a un edificio gubernamental.</figcaption>
                 </figure>
             </div>
-
             <h2>Equipos Especiales</h2>
             <div class="imagenes">
                 <figure>
@@ -75,16 +64,12 @@
             <form action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" method="POST" enctype="multipart/form-data">
                 <label for="imagen">Selecciona una imagen:</label>
                 <input type="file" name="imagen" id="imagen" required>
-
                 <label for="descripcion">Descripción:</label>
                 <textarea name="descripcion" id="descripcion" rows="4" required></textarea>
-
                 <button type="submit">Enviar</button>
             </form>
         </section>
-        
     </main>
-
     <footer>
         <p>&copy;Noticias Policía EE.UU. - Los mas chulos SA.</p>
     </footer>
